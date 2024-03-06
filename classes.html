@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    width: 100vw;
+    height: 15vh;
+    background-color:black;
+    border-bottom-style: solid;
+    border-color: white;
+    border-width: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navlist {
+    display: flex;
+    gap: 15px;
+    
+}
+.navlist li a{
+    color:white;
+    text-decoration: none;
+}
+.logotext h1{
+    color:white;
+}
+.cart_icon{
+    width: 2rem;
+}
+        .container {
+            background-color: rgb(31, 30, 30);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            
+        }
+        
+        .heading {
+            font-size: 20px;
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            gap: 1rem;
+        }
+        
+        .image {
+           
+             width: 1200px;
+            height: 450px; 
+            margin: 60px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        .try img{
+            width: 100%;
+            height: 100%;
+        }
+        .try {
+            border: 1px solid white;
+            background-color: black;
+            width: 450px;
+            height: 450px;
+            gap: 1rem;
+            color: white;
+            
+        }
+        
+        .image h1 {
+            text-align: center;
+            margin: 20px 30px;
+        }
+        
+        .image p {
+            text-align: center;
+            margin: 20px 50px;
+        }
+        .footer{
+        width: 100vw;
+        height: 15rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+         }
+        .logos{
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            
+        }
+        .logos img{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 2rem; 
+        
+            
+        }
+        .whitetext{
+            color:white;
+        }
+         
+        .footer a{
+            color: white;
+            text-decoration: none; 
+        }
+         .footer a:hover{
+            color: #837e78;
+         }
+
+        </style>
+</head>
+
+    <body>
+        <header class="navbar">
+            <div class="logotext">
+                <h1>FITNESS WORLD</h1>
+            </div>
+            <ul type="none" class="navlist">
+                <li><a class="nav" href="home.html">Home</a></li>
+                <li><a class="nav" href="about.html">About</a></li>
+                <li><a class="nav" href="classes.html">Classes</a></li>
+                <li><a class="nav" href="contact.html">Contact</a></li>
+                <li><a class="nav" href="faq.html">FAQ</a></li>
+                <li><a class="nav" href="bookonline.html">Book Online</a></li>
+                <li><a class="nav" href="membership.html">Plans and Pricing</a></li>
+                <li><a class="nav" href="healthkart.html">HealthKart</a></li>
+                <li><a class="nav" href="cart.html"><img class="cart_icon" src="images/cn1.png" alt="cart icon" ></a></li>
+            </ul>
+    </header>
+     <div class="container">
+        <div class="heading">
+            <h1>Our Classes</h1>
+            <p>Choose From a Variety</p>
+        </div>
+        <div class="image">
+            <div class="try">
+                <div class="img1">
+                    <img src="images/wl.jpeg" alt="Weight_Lifting">
+                </div>
+                <h1>Weight Lifting</h1>
+                <p>Find Your Core</p>
+            </div>
+            <div class="try">
+                <div class="img1">
+                    <img src="images/ic.jpeg" alt="Indoor_Cycling">
+                </div>
+                
+                <h1>Indoor Cycling</h1>
+                <p>Time to Shred</p>
+            </div>
+            <div class="try">
+                <div class="img1">
+                    <img src="images/ic.jpeg" alt="Pilates">
+                </div>
+                
+                <h1>Pilates</h1>
+                <p>Surpass Your Goals</p>
+            </div>
+            
+        </div>
+    </div>      
+</div>
+
+        <div class="footer">
+            <div class="footer" class="whitetext">
+                <h2 class="whitetext">FITNESS WORLD</h2>
+                <a href="mailto:fitness2world21@gmail.com">fitness2world21@gmail.com</a>
+                <div class="logos">
+                    <img src="images/in.webp" alt="instagram">
+                    <img src="images/un.webp" alt="YouTube">
+                    <img src="images/tn.webp" alt="copylink">
+                </div>
+                <p class="whitetext">	&#169;2023 by FITNESS WORLD</p>
+            </div>
+        </div>
+
+
+</body>
+</html>

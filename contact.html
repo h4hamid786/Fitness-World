@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS WORLD</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        header {
+            height: 75px;
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 25px;
+        }
+
+
+        .container ul {
+            display: flex;
+            padding: 9px;
+        }
+
+        nav li {
+            margin-right: 15px;
+        }
+
+
+
+        nav a {
+            text-decoration: navy;
+            color: #f6f5f1;
+            text-align: right;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .form {
+            height: 580px;
+            width: 100vw;
+            background-color: rgb(26, 25, 25);
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .box1 {
+
+            height: 499px;
+            width: 600px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .box1 h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 42px;
+            padding: 35px;
+        }
+
+        .box1 p {
+            font-size: 18px;
+        }
+
+        .box2 {
+            height: 499px;
+            width: 600px;
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-content: center;
+            margin-top: 80px;
+        }
+
+        .grid-box1 {
+            display: grid;
+            grid-template-columns: 180px 180px;
+            grid-template-rows: 11px 52px 11px 52px 11px 52px 11px;
+            grid-gap: 10px 30px;
+            padding: 20px;
+
+        }
+
+        .item {
+            color: white;
+
+        }
+
+        .item input {
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 199px;
+            border-bottom: 1px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            font-size: 14px;
+
+        }
+
+        .item input:hover {
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+        .item9 {
+            color: white;
+            grid-column: 1/3;
+        }
+
+        .item9 input {
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 408px;
+            border-bottom: 1px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            font-size: 14px;
+
+        }
+
+        .item9 input:hover {
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+        .item10 {
+            color: white;
+            grid-column: 1/3;
+        }
+
+        .item10 input {
+            background-color: black;
+            color: white;
+            height: 115px;
+            width: 408px;
+            border-bottom: 1px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            font-size: 14px;
+
+        }
+
+        .item10 input:hover {
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+        .item11 button {
+            border-radius: 0px;
+            box-shadow: none;
+            height: 50px;
+            width: 408px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .item11 button:hover {
+            background-color: #a6a39f;
+        }
+
+        .box3 {
+            background-color: rgb(26, 25, 25);
+            height: 558px;
+        }
+
+        .box3 p {
+            padding-left: 83px;
+        }
+
+        .box4 {
+            height: 558px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 19px;
+        }
+
+        .img-box {
+            position: relative;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .overlay-text h5 {
+            padding: 10px;
+            margin: 10px;
+            font-size: 21px;
+            font-weight: lighter;
+        }
+
+        .overlay-text p {
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #837e78b9;
+            text-decoration: none;
+
+        }
+
+        footer {
+            height: auto;
+            width: 100%;
+            background-color: black;
+            color: white;
+
+            padding: 20px;
+
+        }
+
+        .footer-container h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 25px;
+            padding: 25px;
+        }
+
+        .footer-container p {
+            color: white;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+        }
+
+        .footer-container a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        footer a:hover {
+            color: #837e78;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>FITNESS WORLD</h1>
+        <nav>
+            <div class="container">
+
+
+
+                <ul>
+
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="contact.html">Contact </a>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="bookonline.html">Book Online</a></li>
+                    <li><a href="membership.html">Plans and Pricing</a></li>
+                    <li><a href="healthkart.html">HealthKart</a></li>
+                    <li><a href="cart.html"><img src="images/cn1.png" alt="Cart Icon" width="30" height="30"></a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="form">
+        <div class="box1">
+            <h3>Contact Us</h3><br>
+            <p>Hutton Road, Pathak Bari, Asansol, West Bengal,India</p><br> <br>
+            <p>fitness2world21@gmail.com</p><br>
+            <p>6201100414</p>
+
+        </div>
+
+        <div class="box2">
+            <form>
+                <div class="grid-box1">
+                    <div class="item">
+                        <label for="label1">Name*</label>
+                    </div>
+                    <div class="item">
+                        <label for="label2">Email*</label>
+                    </div>
+                    <div class="item">
+                        <input type="text" placeholder="Enter your name" id="label1" required />
+                    </div>
+                    <div class="item">
+                        <input type="email" placeholder="Enter your email" id="label2" required />
+                    </div>
+                    <div class="item">
+                        <label for="label3">Phone</label>
+
+                    </div>
+                    <div class="item">
+                        <label for="label4">Address</label>
+                    </div>
+                    <div class="item">
+                        <input type="tel" placeholder="Enter your phone number" id="label3">
+                    </div>
+                    <div class="item">
+                        <input type="text" placeholder="Enter your address" id="label4">
+                    </div>
+                    <div class="item9">
+                        <label for="label5">Subject</label>
+                    </div>
+                    <div class="item9">
+                        <input type="text" placeholder="Type the subject" id="label5">
+                    </div>
+                    <div class="item10">
+                        <label for="label6">Message</label>
+                    </div>
+                    <div class="item10">
+                        <input type="text" placeholder="Type your message here..." id="label6">
+                    </div>
+                    <div class="item11">
+                        <button>Submit</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <div class="box3">
+        <p><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.8255028272765!2d86.96652777438929!3d23.68219749139308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71ed8fcc8b9d3%3A0xa473d50758b32211!2sHutton%20Rd%2C%20Pathak%20Bari%2C%20Asansol%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1701456339291!5m2!1sen!2sin"
+                width="1200" height="470" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </div>
+    <div class="box4">
+        <div class="img-box">
+            <img src="images/con_down.webp" width="1206" height="440">
+            <div class="overlay-text">
+                <h5>Hours<br>Come Visit Us!</h5>
+                <p>Monday-Friday:5am-9pm<br>Saturday & Sunday:6am-11pm</p>
+            </div>
+        </div>
+
+    </div>
+    <footer style="text-align: center;">
+        <div class="footer-container">
+            <h4>FITNESS WORLD</h4>
+            <a href="mailto:fitness2world21@gmail.com">fitness2world21@gmail.com</a>
+            <br>
+            <a href="https://instagram.com/fitness__world__21?igshid=OGQ5ZDc2ODk2ZA=="><ion-icon
+                    name="logo-instagram"></ion-icon></a>
+            <a href="https://www.youtube.com/@FitnessWorld-pm9eb"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://x.com/Fitness_World21?t=HXgNz461EO3julUrq0UXLw&s=09"><ion-icon
+                    name="logo-twitter"></ion-icon></a>
+            <p>&copy; 2023 FITNESS WORLD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>

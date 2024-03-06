@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Online Page</title>
+    <style>
+        /* NavBar Code Started From Here */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            body{
+                width: 100%;
+                height: 100%;
+            }
+            .navbar{
+                width: 100vw;
+                height: 15vh;
+                background-color:black;
+                border-bottom-style: solid;
+                border-color: white;
+                border-width: 2px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .navlist {
+                display: flex;
+                gap: 15px;
+                
+            }
+            .navlist li a{
+                color:white;
+                text-decoration: none;
+            }
+            .logotext h1{
+                color:white;
+            }
+            .cart_icon{
+                width: 2rem;
+            }
+            .nav:hover{
+                color:rgb(108, 192, 143);
+                font-size: 1.5rem;
+            }
+            .desc{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: space-between;
+                gap: 0.7rem;
+                font-size: 1.2rem;
+            }
+            /* body css starts from here */
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 100%;
+                height: 100%;
+            }
+            .heading{
+                /* border:2px solid black; */
+                width: 90vw;
+                height: 3rem;
+                margin: 10px auto;
+                text-align: center;
+            }
+            .container{
+                /* border:2px solid black; */
+                width: 90vw;
+                margin: 30px auto;
+                padding: 1rem;
+                height: 700px;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                gap: 1.5rem;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+            }
+            .card_container{
+                border:2px solid green;
+                border-radius: 10px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+            .image{
+                width: 100%;
+                height: 10rem;
+                background-color: yellow;
+            }
+            .card_text{
+                padding-left: 1rem;
+            }
+            .links{
+                display: flex;
+                justify-content: space-around;
+                padding: 1rem;
+                
+            }
+            .logo img{
+                width: 3rem;
+                height: 3rem;
+            }
+            button{
+                width: 200px;
+                height: 50px;
+                background-color: white;
+                border-radius: 2rem;
+                background-color: black;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+                
+            }
+            button a{
+                color:white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: larger;
+            }
+            .image img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position:top;
+            }
+            /* footer code starts from here */
+            .footer{
+                width: 100vw;
+                height: 15rem;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .logos{
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+                
+            }
+            .logos img{
+                width: 3rem;
+                height: 3rem;
+                border-radius: 2rem; 
+            
+                
+            }
+            .whitetext{
+                color:white;
+            }
+            .footer a{
+                color: white;
+            }
+    </style>
+   
+</head>
+<body>
+    <header class="navbar">
+            <div class="logotext">
+                <h1>FITNESS WORLD</h1>
+            </div>
+            <ul type="none" class="navlist">
+                <li><a class="nav" href="home.html">Home</a></li>
+                <li><a class="nav" href="about.html">About</a></li>
+                <li><a class="nav" href="classes.html">Classes</a></li>
+                <li><a class="nav" href="contact.html">Contact</a></li>
+                <li><a class="nav" href="faq.html">FAQ</a></li>
+                <li><a class="nav" href="bookonline.html">Book Online</a></li>
+                <li><a class="nav" href="membership.html">Plans and Pricing</a></li>
+                <li><a class="nav" href="healthkart.html">HealthKart</a></li>
+                <li><a class="nav" href="cart.html"><img class="cart_icon" src="images/cn1.png" alt="cart icon"></a></li>
+            </ul>
+    </header>
+    <div class="heading">
+        <h1>Our Services</h1>
+    </div>
+    <div class="container">
+
+        <!-- card 1 start here -->
+
+        <div class="card_container">
+            <div class="image">
+                <img src="images/pt.jpeg" alt="Health">
+            </div>
+
+            <div class="card_text">
+                <h2>Personal Training</h2>
+                <p>1 hour</p>
+            </div>
+            <div class="links">
+                <div class="button">
+                    <button><a href="registration.php" target="_blank">Book Now</a></button>
+                </div>
+                <div class="logo">
+                    <img src="images/fw logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <!-- card 1 start here -->
+
+
+        <div class="card_container">
+            <div class="image">
+                <img src="images/eq.jpeg" alt="Health">
+            </div>
+
+            <div class="card_text">
+                <h2>Equipment Inspection</h2>
+                <p>1 hour</p>
+            </div>
+            <div class="links">
+                <div class="button">
+                    <button><a href="registration.php" target="_blank">Book Now</a></button>
+                </div>
+                <div class="logo">
+                    <img src="images/fw logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="card_container">
+            <div class="image">
+                <img src="images/og.jpg" alt="Health">
+            </div>
+
+            <div class="card_text">
+                <h2>Open Gym</h2>
+                <p>1 hour</p>
+            </div>
+            <div class="links">
+                <div class="button">
+                    <button><a href="registration.php" target="_blank">Book Now</a></button>
+                </div>
+                <div class="logo">
+                    <img src="images/fw logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="card_container">
+            <div class="image">
+                <img src="images/aw.jpeg" alt="Health">
+            </div>
+
+            <div class="card_text">
+                <h2>Arm Wrestling</h2>
+                <p>1 hour</p>
+            </div>
+            <div class="links">
+                <div class="button">
+                    <button><a href="registration.php" target="_blank">Book Now</a></button>
+                </div>
+                <div class="logo">
+                    <img src="images/fw logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="card_container">
+            <div class="image">
+                <img src="images/tow.jpeg" alt="Health">
+            </div>
+
+            <div class="card_text">
+                <h2>Full Day Training</h2>
+                <p>1 hour</p>
+            </div>
+            <div class="links">
+                <div class="button">
+                    <button><a href="registration.php" target="_blank">Book Now</a></button>
+                </div>
+                <div class="logo">
+                    <img src="images/fw logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="card_container">
+            <div class="image">
+                <img src="images/tp.jpeg" alt="Health">
+            </div>
+
+            <div class="card_text">
+                <h2>Training Package</h2>
+                <p>1 hour</p>
+            </div>
+            <div class="links">
+                <div class="button">
+                    <button><a href="registration.php" target="_blank">Book Now</a></button>
+                </div>
+                <div class="logo">
+                    <img src="images/fw logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" class="whitetext">
+        <h2 class="whitetext">FITNESS WORLD</h2>
+        <a href="mailto:fitness2world21@gmail.com">fitness2world21@gmail.com</a>
+        <div class="logos">
+            <a href="https://instagram.com/fitness__world__21?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/in.webp" alt="instagram"></a>
+            <a href="https://www.youtube.com/@FitnessWorld-pm9eb"><img src="images/un.webp" alt="YouTube"></a>
+            <a href="https://x.com/Fitness_World21?t=HXgNz461EO3julUrq0UXLw&s=09"><img src="images/tn.webp" alt="copylink"></a>
+        </div>
+        <p class="whitetext">	&#169;2023 by FITNESS WORLD</p>
+    </div>
+</body>
+</html>

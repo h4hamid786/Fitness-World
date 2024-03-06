@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans and Pricing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        /* NavBar Code Started From Here */
+        .navbar{
+            width: 100vw;
+            height: 15vh;
+            background-color:black;
+            border-bottom-style: solid;
+            border-color: white;
+            border-width: 2px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navlist {
+            display: flex;
+            gap: 15px;
+            
+        }
+        .navlist li a{
+            color:white;
+            text-decoration: none;
+        }
+        .logotext h1{
+            color:white;
+        }
+        .cart_icon{
+            width: 2rem;
+        }
+        .nav:hover{
+            color:rgb(108, 192, 143);
+            font-size: 1.5rem;
+        }
+        .desc{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-between;
+            gap: 0.7rem;
+            font-size: 1.2rem;
+        }
+        main{
+            width: 80%;
+            margin: 0 auto;
+            height: 1000px;
+            background-color: black;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+        .heading_text{
+            width: 100%;
+            height: 6rem;
+            padding: 0.8rem;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            background-color: black;
+        }
+        .container{
+            border-top-style: ridge;
+            border-color: beige;
+            width: 100%;
+            height: 900px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 0;
+            
+        }
+        .right{
+            border-left-style: ridge;
+            border-color: beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around; 
+            color: white;
+            background-color: black;
+        }
+        .right_bottom{
+            border-left-style: ridge;
+            border-color: beige;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 1.3rem;
+            color: white;
+            background-color: black;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+            background-color: black;  
+        }
+
+        .left_bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 1.3rem;
+            color: white;
+            background-color: black;
+        }
+        button{
+            width: 300px;
+            height: 70px;
+            background-color: white;
+        }
+        button a{
+            color:black;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .head{
+            text-align: center;
+            font-size: 2rem;
+        }
+        .price h1{
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 0;
+        }
+        .footer{
+            width: 100vw;
+            height: 15rem;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .logos{
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            
+        }
+        .logos img{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 2rem; 
+        
+            
+        }
+        .whitetext{
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logotext">
+            <h1>FITNESS WORLD</h1>
+        </div>
+        <ul type="none" class="navlist">
+            <li><a class="nav" href="home.html">Home</a></li>
+            <li><a class="nav" href="about.html">About</a></li>
+            <li><a class="nav" href="classes.html">Classes</a></li>
+            <li><a class="nav" href="contact.html">Contact</a></li>
+            <li><a class="nav" href="faq.html">FAQ</a></li>
+            <li><a class="nav" href="bookonline.html">Book Online</a></li>
+            <li><a class="nav" href="membership.html">Plans and Pricing</a></li>
+            <li><a class="nav" href="healthkart.html">HealthKart</a></li>
+            <li><a class="nav" href="cart.html"><img class="cart_icon" src="images/cn1.png" alt="cart icon"></a></li>
+        </ul>
+    </header>
+
+ <main>
+    <div class="heading_text">
+        <h1>Choose your pricing plan</h1>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div  >
+                <h2 class="head">Golden Pass</h2>
+            </div>
+            <div class="price">
+                <h1>₹10,000</h1>
+            </div>
+            <div class="desc" >
+                <p>Every year</p>
+                <p>Unlimited access for a year</p>
+                <p>Valid for 2 years</p>
+                <p> + 7 day free trial</p>
+            </div>
+            <div class="button">
+                <button><a href="#">Start Free Trail</a></button>
+            </div>
+            
+              
+        </div>
+        <div class="right">
+            <div  >
+                <h2 class="head">Golden Pass Plus</h2>
+            </div>
+            <div class="price">
+                <h1>₹18,000</h1>
+            </div>
+            <div class="desc" >
+                <p>Every year</p>
+                <p>Unlimited access for a year on every thing</p>
+                <p>Valid for Full Time</p>
+                <p> + 30 day free trial</p>
+            </div>
+            <div class="button">
+                <button><a href="#">Start Free Trail</a></button>
+            </div>
+        </div>
+        
+        <div class="left_bottom">
+            <p>Personal Training</p>
+            <p>Open Gym</p>
+        </div>
+        <div class="right_bottom">
+            <p>Personal Training</p>
+            <p>Full Day Training</p>
+            <p>Equipment Inspection</p>
+            <p>Open Gym</p>
+            <p>   Private Lesson</p>
+            <p> Training Package</p>
+        </div>
+        
+        
+        
+    </div>
+ </main>
+ <div class="footer" class="whitetext">
+    <h2 class="whitetext">FITNESS WORLD</h2>
+    <a class="whitetext" href="mailto:fitness2world21@gmail.com">fitness2world21@gmail.com</a>
+    <div class="logos">
+        <a href="https://instagram.com/fitness__world__21?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/in.webp" alt="instagram"></a>
+        <a href="https://www.youtube.com/@FitnessWorld-pm9eb"><img src="images/un.webp" alt="YouTube"></a>
+        <a href="https://x.com/Fitness_World21?t=HXgNz461EO3julUrq0UXLw&s=09"><img src="images/tn.webp" alt="Twitter"></a>
+    </div>
+    <p class="whitetext">	&#169;2023 by FITNESS WORLD</p>
+</div>
+
+</body>
+</html>

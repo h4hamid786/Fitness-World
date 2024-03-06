@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            body{
+                width: 100%;
+                height: 100%;
+            }
+            .navbar{
+            width: 100vw;
+            height: 15vh;
+            background-color:black;
+            border-bottom-style: solid;
+            border-color: white;
+            border-width: 2px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            }
+            .navlist {
+                display: flex;
+                gap: 15px;
+                
+            }
+            .navlist li a{
+                color:white;
+                text-decoration: none;
+            }
+            .logotext h1{
+                color:white;
+            }
+            .cart_icon{
+                width: 2rem;
+            }
+            .nav:hover{
+                color:rgb(108, 192, 143);
+                font-size: 1.5rem;
+            }
+            .container{
+                height: 700px;
+                width: 100vw;
+                background-color:rgb(87, 85, 85);;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .content_box{
+                width: 80vw;
+                height: 390px;
+                background-color:black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+            }
+            .content_text{
+                width: 60vw;
+                height: 200px;
+                background-color:black;
+                color:white;
+                padding: 1rem;
+            }
+            .content_text h1{
+                margin-bottom: 1.5rem;
+            }
+            button{
+                width: 150px;
+                height: 60px;
+                color: black;
+                font-weight: bold;
+            }
+            .image_bar{
+                width: 90vw;
+                height: 390px;
+                background: url('images/aboutdown.webp');
+                background-repeat: no-repeat;
+                object-fit: cover;
+                object-position: center;
+                margin: 1rem auto;
+                padding-left: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color:white;
+                
+            }
+        .footer{
+                width: 100vw;
+                height: 15rem;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .logos{
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+                
+            }
+            .logos img{
+                width: 3rem;
+                height: 3rem;
+                border-radius: 2rem; 
+            
+                
+            }
+            .whitetext{
+                color:white;
+            }
+
+            
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logotext">
+            <h1>FITNESS WORLD</h1>
+        </div>
+        <ul type="none" class="navlist">
+            <li><a class="nav" href="home.html">Home</a></li>
+            <li><a class="nav" href="about.html">About</a></li>
+            <li><a class="nav" href="classes.html">Classes</a></li>
+            <li><a class="nav" href="contact.html">Contact</a></li>
+            <li><a class="nav" href="faq.html">FAQ</a></li>
+            <li><a class="nav" href="bookonline.html">Book Online</a></li>
+            <li><a class="nav" href="membership.html">Plans and Pricing</a></li>
+            <li><a class="nav" href="healthkart.html">HealthKart</a></li>
+            <li><a class="nav" href="cart.html"><img class="cart_icon" src="images/cn1.png" alt="cart icon"></a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="content_box">
+            <div class="content_text">
+                <h1>Our Method</h1>
+                <p> Since we were established in 2000, FITNESS WORLD has changed lives all over West Bengal,India.
+                Above all, we've made it our mission to teach the world how to build strength, character and 
+                spirit through focused fitness. Whether you're new to this or a master of the craft, FITNESS
+                WORLD can help wash away the stresses and shape a stronger, better you. Give us a call 
+                today!</p>
+            </div>
+            <button>Learn More</button>
+        </div>
+    
+    <div class="image_bar">
+        <h2>Hours</h2>
+        <h2>Come Visit Us!</h2>  
+        <h3>Monday - Friday: 5am - 9pm</h3>
+        <h3> Saturday & Sunday: 6am - 11pm</h3>
+            
+            
+           
+    </div>
+</div>
+    <div class="footer" class="whitetext">
+        <h2 class="whitetext">FITNESS WORLD</h2>
+        <a class="whitetext" href="mailto:fitness2world21@gmail.com">fitness2world21@gmail.com</a>
+        <div class="logos">
+            <a href="https://instagram.com/fitness__world__21?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/in.webp" alt="instagram"></a>
+            <a href="https://www.youtube.com/@FitnessWorld-pm9eb"><img src="images/un.webp" alt="YouTube"></a>
+            <a href="https://x.com/Fitness_World21?t=HXgNz461EO3julUrq0UXLw&s=09"><img src="images/tn.webp" alt="Twitter"></a>
+        </div>
+        <p class="whitetext">	&#169;2023 by FITNESS WORLD</p>
+    </div>
+    
+</body>
+</html>
